@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function valForm(){
+            if(document.login.username.value=="") {
+                alert("Please Enter your username");
+                document.login.username.focus();
+                return false;
+            }
+            if(document.login.pass.value=="") {
+                alert("Please Enter your password");
+                document.login.pass.focus();
+                return false;
+            }
+            return true;  // allow form submission
+        }
+    </script>
+</head>
+<body>
+    <div class="login">
+        <h2>Login</h2>
+        <form name="login" id="login" method="post" action="loginAction.jsp" onsubmit="return valForm()">
+            <input type="text" name="username" placeholder="Enter username"/> <br><br>
+            <input type="password" name="pass" placeholder="Enter your password"/> <br><br>
+            <a href="#">Forgot Password</a><br><br>
+            <input type="submit" value="Login"/><br><br>
+        </form>
+    </div>
+</body>
+</html>

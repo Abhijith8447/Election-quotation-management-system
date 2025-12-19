@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%);
+    font-family: 'Arial';
+    min-height: 100vh;
+}
+
+.login {
+    width: 350px;
+    height: auto;
+    margin: 220px 450px 50px 550px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.login label {
+    padding: 10px;
+}
+
+.login a {
+    background-color: none;
+    color: #ee9ca7; /* soft pink link colour */
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    color: #4a4a4a;  /* dark grey text */
+}
+
+span {
+    color: red;
+    font-size: 17px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 300px;
+    height: 50px;
+    border: 2px solid #f3b5c4; /* soft pink border */
+    border-radius: 12px;
+    padding-left: 8px;
+    margin-left: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    border-color: #ee9ca7; /* pink focus border */
+    outline: none;
+}
+
+/* Updated Button Gradient (Light Pink) */
+input[type=button],
+input[type=submit] {
+    background: linear-gradient(135deg, #ffb6c1 0%, #ff8fa3 100%);
+    color: white;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-left: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4); /* light pink glow */
+}
